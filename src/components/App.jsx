@@ -1,7 +1,6 @@
-import {Hello} from './Hello.jsx';
-import {
-  View,
-} from 'react-native';
+import { View } from "react-native";
+import { Hello } from "./Hello.jsx";
+import SqftToAcresView from "./SqftToAcresView";
 
 export default function App() {
   return (
@@ -9,7 +8,10 @@ export default function App() {
       <Hello name="Rich" />
       <Hello />
       <Hello name="Biff" />
+
+      <SqftToAcresView />
     </View>
   );
 }
+
 
