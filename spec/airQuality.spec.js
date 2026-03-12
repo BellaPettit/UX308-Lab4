@@ -1,5 +1,4 @@
-
-import { airQuality } from "./airQuality";
+import { airQuality } from "../src/airQuality.js";
 
 describe("airQuality()", () => {
 

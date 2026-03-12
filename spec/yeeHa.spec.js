@@ -1,23 +1,21 @@
+import { yeeHa } from "../src/yeeHa.js";
 
+describe("yeeHa()", () => {
 
-import { yee_ha } from "./yeeHa";
-
-describe("yee_ha()", () => {
-
-    it("divisible by 3 → Yee", () => {
-        expect(yee_ha(3)).toBe("Yee");
+    it("returns Yee when divisible by 3", () => {
+        expect(yeeHa(3)).toBe("Yee");
     });
 
-    it("divisible by 7 → Ha", () => {
-        expect(yee_ha(7)).toBe("Ha");
+    it("returns Ha when divisible by 7", () => {
+        expect(yeeHa(7)).toBe("Ha");
     });
 
-    it("divisible by 3 and 7 → Yee Ha", () => {
-        expect(yee_ha(21)).toBe("Yee Ha");
+    it("returns Yee Ha when divisible by both 3 and 7", () => {
+        expect(yeeHa(21)).toBe("Yee Ha");
     });
 
-    it("not divisible by 3 or 7 → Nada", () => {
-        expect(yee_ha(2)).toBe("Nada");
+    it("returns Nada when not divisible by 3 or 7", () => {
+        expect(yeeHa(2)).toBe("Nada");
     });
 
 });
